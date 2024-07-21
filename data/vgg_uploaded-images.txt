@@ -1,0 +1,86 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                 Hamster_01.jpg  label:                    hamster
+ 2 key:                    Coup_01.jpg  label:                       coup
+ 3 key:                     Dog_01.jpg  label:                        dog
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                Hamster_01.jpg: 
+Real:                    hamster   Classifier:               golden retriever
+
+                   Coup_01.jpg: 
+Real:                       coup   Classifier:               perfume, essence
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                Hamster_01.jpg: 
+Real:                    hamster   Classifier:               golden retriever  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                   Coup_01.jpg: 
+Real:                       coup   Classifier:               perfume, essence  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+% Correct Dogs      : 100.00%
+% Correct Breed     : 0.00%
+% Correct "Not-a" Dog: 50.00%
+% Match (labels)    : 0.00%
+Model used vgg
+Number of images 4
+Number of dogs 2
+Number of images that are not dogs 2
+pct_match           : 0.00%
+pct_correct_dogs    : 100.00%
+pct_correct_breed   : 0.00%
+pct_correct_notdogs : 50.00%
+
+INCORRECT Dog/NOT Dog Assignments:
+File:       Hamster_01.jpg   Pet Label:              hamster   Classifier Label:     golden retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:        standard poodle, poodle
+Real:                        dog   Classifier:        standard poodle, poodle
+
+** Total Elapsed Runtime: 0:59:53
